@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link type="text/css" href="CSS/main.css" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+            integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+            crossorigin="anonymous"
+        />
+        <script src="JS/jquery-3.5.1.min.js"></script>
+        <script src="JS/multislider.min.js"></script>
+        <title>The Yard Shop</title>
+        <link rel="icon" href="images/yard.png">
+    </head>
+
+    <body>
+        <!--Navbar-->
+        <nav>
+            <!--Navbar has two part the top one and the bottom one-->
+            <div class="navbar-top">
+                <div>
+                    <button id="menuButton"><i class="fas fa-bars"></i></button>
+                    <!--Logo-->
+                    <a href="index.html">
+                        <div class="logo">
+                          <img id="round" src="images/yard2.png" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div>
+
+                    <!--Shopping cart-->
+                    <div class="shopping-cart">
+                        <div class="sum-prices">
+                            <!--Shopping cart logo-->
+                            <i
+                                class="fas fa-shopping-cart shoppingCartButton"
+                            ></i>
+                            <!--The total prices of products in the shopping cart -->
+                            <h6 id="sum-prices"></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Navbar bottom part -->
+            <div class="navbar" id="navbar">
+                <div class="links">
+                    <ul>
+                        <li class="nav-links">
+                            <a href="index.html" class="link">Homepage</a>
+                        </li>
+                        <li class="nav-links">
+                            <a href="index3.html" class="link">The Boys</a>
+                        </li>
+                      </ul>
+                </div>
+
+            </div>
+            <div class="producstOnCart hide">
+                <div class="overlay"></div>
+                <div class="top">
+                    <button id="closeButton">
+                        <i class="fas fa-times-circle"></i>
+                    </button>
+                    <h3>Cart</h3>
+                </div>
+                <ul id="buyItems">
+                    <h4 class="empty">Your shopping cart is empty</h4>
+
+                </ul>
+                <button class="btn checkout hidden">Check out</button>
+            </div>
+        </nav>
+        <main>
+            <section class="main-section">
+                <div class="product-container">
+                    <h3>Goosn' For Some Merch</h3>
+                    <div class="products">
+                        <div class="product a">
+                            <div class="product-under">
+                                <figure class="product-image">
+                                    <img
+                                        src="images/hat.png"
+                                        alt="popular labtops and computers"
+                                    />
+                                    <div class="product-over">
+                                        <button
+                                            class="btn btn-small addToCart"
+                                            data-product-id="1"
+                                        >
+                                            <i class="fas fa-cart-plus"></i>Add
+                                            to cart
+                                        </button>
+
+                                    </div>
+                                </figure>
+                                <div class="product-summary">
+                                    <h4 class="productName">The Yard Dad Hat</h4>
+                                    <p>
+                                      To cover your receding hairline
+                                    </p>
+                                    <h6 class="price">
+                                        $<span class="priceValue">15</span>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product a">
+                            <div class="product-under">
+                                <figure class="product-image">
+                                    <img
+                                        src="images/crewneck.png"
+                                        alt="popular labtops and computers"
+                                    />
+                                    <div class="product-over">
+                                        <button
+                                            class="btn btn-small addToCart"
+                                            data-product-id="2"
+                                        >
+                                            <i class="fas fa-cart-plus"></i>Add
+                                            to cart
+                                        </button>
+
+                                    </div>
+                                </figure>
+                                <div class="product-summary">
+                                    <h4 class="productName">The Yard Crewneck</h4>
+
+                                    <p>
+                                        Look like a person in a crewneck with this item
+                                    </p>
+                                    <h6 class="price">
+                                        $<span class="priceValue">40</span>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product a">
+                            <div class="product-under">
+                                <figure class="product-image">
+                                    <img
+                                        src="images/package.png"
+                                        alt="popular labtops and computers"
+                                    />
+                                    <div class="product-over">
+                                        <button
+                                            class="btn btn-small addToCart"
+                                            data-product-id="3"
+                                        >
+                                            <i class="fas fa-cart-plus"></i>Add
+                                            to cart
+                                        </button>
+
+                                    </div>
+                                </figure>
+                                <div class="product-summary">
+                                    <h4 class="productName">The Yard Sticker Set</h4>
+
+                                    <p>
+                                        Put these on your Honda Civic
+                                    </p>
+                                    <h6 class="price">
+                                        $<span class="priceValue">5</span>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product a">
+                            <div class="product-under">
+                                <figure class="product-image">
+                                    <img
+                                        src="images/yard1.jpg"
+                                        alt="popular labtops and computers"
+                                    />
+                                    <div class="product-over">
+                                        <button
+                                            class="btn btn-small addToCart"
+                                            data-product-id="4"
+                                        >
+                                            <i class="fas fa-cart-plus"></i>Add
+                                            to cart
+                                        </button>
+
+                                    </div>
+                                </figure>
+                                <div class="product-summary">
+                                    <h4 class="productName">Signed Yard Poster</h4>
+
+                                    <p>
+                                        Super cool poster with names on it more expensive very nice
+                                    </p>
+                                    <h6 class="price">
+                                        $<span class="priceValue">60</span>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+              </main>
+        <footer>
+            <div class="footer-second">
+                        <div class="footer-column-2">
+                    <h3>Customer service</h3>
+                    <a href="#">Contact</a>
+                    <a href="#">Track your order</a>
+                    <a href="#">terms of purchase</a>
+                    <a href="#">common questions</a>
+                </div>
+                        </div>
+            <ul class="footer-last">
+                <li>
+                    <p><i class="fab fa-cc-mastercard"></i></p>
+                </li>
+                <li>
+                    <p><i class="fab fa-cc-paypal"></i></p>
+                </li>
+                <li>
+                    <p><i class="fab fa-cc-visa"></i></p>
+                </li>
+                <li>
+                    <p><i class="fab fa-cc-amex"></i></p>
+                </li>
+            </ul>
+        </footer>
+        <script src="JS/script.js"></script>
+        <script src="shopping-cart.js"></script>
+    </body>
+</html>
