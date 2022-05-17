@@ -94,7 +94,7 @@ nav .navbar-top {
     width: 45px;
     height: 40px;
     cursor: pointer;
-    color: #49989e;
+    color: #0A5631;
     background: transparent;
     border: none;
     display: none;
@@ -453,7 +453,7 @@ ul .nav-links {
 }
 
 #hearderSlide {
-    background-color: #49989e;
+    background-color: #0A5631;
     height: 55vh;
     position: relative;
 }
@@ -498,7 +498,7 @@ ul .nav-links {
 .MS-right:active,
 .MS-left:active {
     color: #fff;
-    background-color: #49989e;
+    background-color: #0A5631;
 }
 
 #hearderSlide .MS-right {
@@ -742,7 +742,7 @@ main {
 
 .btn-newMobile {
     background-color: white;
-    color: #49989e;
+    color: #0A5631;
     box-shadow: 3px 3px 5px #4e4e4e;
     z-index: 10;
 }
@@ -771,14 +771,14 @@ main {
     width: 60%;
     padding: 15px;
     background-color: white;
-    box-shadow: 2px 2px 2px #49989e;
+    box-shadow: 2px 2px 2px #0A5631;
     color: black;
     margin-bottom: 10px;
     cursor: pointer;
 }
 
 .btn-small:hover {
-    background-color: #49989e;
+    background-color: #0A5631;
     color: white;
 }
 
