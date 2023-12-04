@@ -1,119 +1,523 @@
-* {
-	padding: 0;
-	margin: 0;
+#wrapper .text {
+  position: relative;
+  top: -120px;
+  bottom: 0px;
+  left: 0px;
+  visibility: hidden;
 }
 
-body {
-	background-color: black;
+#wrapper:hover .text {
+  visibility: visible;
+  font-size: 15px;
+  text-transform: lowercase;
+  color: #F4F4F4;
 }
-
-.flash {
-	animation: infinite
-}
-
-button.char {
-	border: none;
-	display: flex;
-	flex-direction: column;
-}
-
-.character-select {
-	display: flex;
-	align-items: center;
-	max-width: 1000px;
-	margin: auto;
-	height: 100vh;
-}
-
-.character-select > .char {
-	border-right: solid 5px;
-	box-sizing: border-box;
-	flex: 1 1 0px;
-	transition: flex-grow ease 0.4s, background-color ease 0.4s;
-	height: 100%;
-	position: relative;
-	overflow: hidden;
-}
-
-.character-select > .char:last-child {
-	border-right: none;
-}
-
-.character-select > .char:hover,
-.character-select > .char:focus {
-	flex-grow: 4;
-}
-
-.character-select > .char:focus {
-	background-color: gray;
-}
-
-.char > .title {
-	position: absolute;
-	right: 0px;
-	padding: 5px;
-	text-align: center;
-	color: rgba(0,0,0,0.7);
-	-webkit-text-stroke: 2px;
-	-webkit-text-stroke-color: black;
-	font-size: 100px;
-	font-family: 'Germania One', sans-serif;
-	opacity: 0;
-	transition: opacity ease 0.4s;
-	z-index: 1;
-}
-
-.char1 {
-	background-color: #c7c7c7;;
-}
-
-div.aid{
-  padding-top: 100px;
-  padding-right: 30px;
-  padding-left: 400px;
-}
-
-.char2 {
-	background-color: #A0E7E5;
-}
-
-div.lud{
-  padding-top: 125px;
-  padding-right: 30px;
-  padding-left: 430px;
+/* Start: menu*/
+header {
+  background: #151515;
+  width: 100%;
+  left: 0;
 }
 
 
-.char3 {
-	background-color:  #ff8a11;
+/* secret little logo animation*/
+
+
+/* end of secret little logo animation*/
+
+#menuIcon {
+    width: 160px;
+    height: 70px;
+}
+nav {
+  max-width: 100%;
+  margin: auto;
+  padding: 20px 0;
+  overflow: hidden;
 }
 
-div.slime{
-  padding-top: 125px;
-  padding-left: 325px;
+.logo-box {
+  float: left;
+  margin-left: 10px;
 }
 
-.char4 {
-	background-color: #536A81;
+.logo {
+  margin: 0;
+  height: 70px;
+  text-align: center;
 }
 
-div.envy{
-  padding-top: 125px;
-  padding-left: 325px;
+.ul-0 {
+  margin: 0;
+  margin-right: 25px;
+  padding-left: 0;
+  list-style: none;
+  float: right;
+  height: 70px;
+  line-height: 70px;
+  text-align:center;
 }
 
-.char > img {
-	height: 150%;
-	position: absolute;
-	transform: translateX(-50%);
-	left: 25%;
-	opacity: 0.4;
-	transition: opacity ease 0.4s, background-color ease 0.4s;
+.a-logo {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+
+}
+:root {
+  --mainColor: white;
 }
 
-.character-select > .char:hover > img,
-.character-select > .char:focus > img,
-.character-select > .char:hover > .title,
-.character-select > .char:focus > .title {
-	opacity: 1;
+.a-0 {
+  color: white;
+  font-size:125%;
+  padding: 15px;
+text-decoration: none;
 }
+
+.a-0:hover {background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23453886' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: 20%;
+  border-bottom: 0;
+  padding-bottom: .3em;
+  text-decoration: none;
+}
+
+
+.li-0 {
+  display: inline-block;
+  margin-left: 25px;
+  transition: .5s linear;
+}
+
+
+@media screen and (max-width:574px) {
+  .logo-box {
+    float: none;
+    margin: 0 auto;
+  }
+  .ul-0 {
+    float: none;
+    margin: 0 25px;
+    }
+ .li-0:first-of-type {margin-left:0}
+}
+
+@media screen and (max-width:493px) {
+nav {
+  overflow: visible
+}
+.ul-0 {
+  height: auto;
+  padding-top: 30px;
+  line-height: 30px;
+}
+.li-0 {
+  display: block;
+  margin: 0;
+}
+}
+
+
+/* end of menu -> textBox*/
+.tagline {
+  text-align: center;
+}
+
+.textBox {
+  background-color: #151515;
+}
+
+ .textBox p {
+  letter-spacing: 4px;
+  color: white;
+  padding: 60px 40px;  /* Increase the vertical padding */
+  font-size: 320%;
+  max-width: auto;
+  line-height: 50px;
+  font-weight: 100;
+}
+/* end of textBox-> heroBox*/
+
+#container-1 {
+  height: 1060px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+
+/* end of heroBox -> skillBox*/
+
+i {
+  font-size: 800%;
+  color: #151515;
+
+}
+
+#container-2 {
+  background: #F4F4F4;
+  margin-bottom: 50px;
+  margin-top: 25px;
+}
+
+#container-2 h2 {
+  letter-spacing: 4px;
+  padding: 50px 40px 50px 40px;
+}
+
+.column-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-column, .right-column {
+  width: 50%; /* Each column takes up half the width of the container */
+  padding: 0 20px; /* Add padding on both sides */
+}
+
+.left-column {
+  padding-left: 65px; /* Increase left padding to shift text right */
+}
+
+.right-column {
+  padding-left: 20px; /* Adjust left padding as needed */
+}
+
+.row-fluid {
+    width: 100%;
+}
+
+.skills-block {
+    text-align: center;
+
+}
+
+.iconSkill {
+    margin-bottom: 60px;
+}
+
+/* end of skillBox -> workBox*/
+#container-3 {
+  background-color:#141414;
+
+}
+
+#container-3 h3{
+  color:#F4F4F4;
+padding: 50px 40px 50px 40px;
+  letter-spacing: 4px;
+}
+
+h5{
+  color:#F4F4F4;
+padding: 50px 40px 50px 40px;
+  letter-spacing: 4px;
+  font-size: 20;
+  text-align: center;
+}
+
+#grid {
+    max-width:100%;
+    margin:0 auto;
+    padding:0;
+    font-size:0;
+    list-style:none;
+    background-color:#141414;
+
+}
+#grid li {
+    display: inline-block;
+    width:25%;
+    vertical-align:middle;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+.gridCell {
+  border:3px solid #151515;
+    display:block;
+    position: relative;
+    overflow:hidden;
+}
+
+.gridImg {
+    display:block;
+    width: 100%;
+    height: auto;
+    border:none;
+    transform:scale(1);
+    transition:all 0.8s;
+    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
+
+
+}
+
+#grid li:hover .gridImg {
+    transform:scale(1.05);
+      -webkit-filter: grayscale(0%); /* Chrome, Safari, Opera */
+    filter: grayscale(0%);
+
+}
+
+/* If have the overlay layer */
+.gridOverlay {
+    position: absolute;
+    display:block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: #F4F4F4
+    background-size:50px 50px;
+    opacity:0;
+    transition:all 0.6s;
+
+}
+#grid li:hover .gridOverlay {
+    opacity:0.2;
+
+}
+
+.gridText {
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  left: 30%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px;
+  text-align: center;
+  background-color: #151515;
+  border-radius: .2em;
+  font-size: 18px;
+  color: white;
+  opacity: 0;
+  transition: all .4s;
+}
+
+#grid li:hover .gridText {
+    transform:translateY(0px);
+    opacity:0.9;
+}
+
+@media (max-width: 9000px) {
+    #grid li {
+        width:33%;
+    }
+}
+
+@media (max-width: 700px) {
+    #grid li {
+        width:50%;
+    }
+}
+
+@media (max-width: 550px) {
+    #grid li {
+        width:100%;
+    }
+}
+
+/* end of workBox -> aboutBox*/
+
+#container-4 {
+  width: 90%;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin: auto;
+  padding-bottom: 100px;
+  background: #151515;
+  color: white;
+
+}
+
+.about {
+  display: block;
+  letter-spacing: 2px;
+
+}
+
+
+/*start of  piano animation stuff */
+.svg-animation-contain {
+  width: 100%;
+  border-radius: 20%;
+  height: 500px;
+  padding-left: 0%;
+  display: block;
+  margin: auto;
+  }
+
+.svg-animation-contain svg {
+ width: 100%;
+}
+
+
+#rightarm {
+  animation: bounce 0.2s infinite ease-out alternate;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(-50px);
+  }
+}
+
+
+/*end of piano animation stuff */
+
+.cta-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+
+.contact {
+  max-width: 75%;
+  display: block;
+  letter-spacing: 2px;
+}
+
+.follow {
+  display: block;
+  letter-spacing: 2px;
+}
+
+.about h3, .contact h3, .follow h3 {
+  margin: 100px 0 25px 0;
+}
+
+
+.social-icon1 {
+color: #151515;
+  font-size: 200%;
+  padding: 0 20px 0 0;
+}
+
+.social-icon1 i:hover {
+  color:#63469f
+}
+
+.social-icon1 i {
+  color: #151515;
+}
+
+.center {
+  text-align: center;
+}
+
+.social-icon {
+color: white;
+  font-size: 200%;
+  padding: 0 20px 0 0;
+}
+
+
+.social-icon i:hover {
+  color:#0077b5
+}
+
+.social-icon i {
+  color: white;
+}
+
+.social-icon2 {
+color: white;
+  font-size: 200%;
+  padding: 0 20px 0 0;
+}
+
+.social-icon2 i:hover {
+  color:#707070
+}
+
+.social-icon2 i {
+  color: white;
+}
+
+h4{
+  padding-left: 7px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 0px;
+}
+
+.buttons .btn {
+  display: block;
+  margin: 9px;
+  padding: 15px 25px;
+  font-size: 20px;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  max-width: 80%; /* Adjust as necessary */
+}
+
+.buttons .btn:hover {
+  background-color: #63469f;
+  color: #fff;
+}
+
+
+.email-btn {
+  background-color: #63469f;
+  }
+
+.schedule-call-btn {
+  background-color: #28a745;
+}
+
+.buttonSend {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #141414;
+    border: none;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+  font-weight: bold;
+  
+}
+
+.buttonSend:hover {background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23453886' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: 5%;
+  border-bottom: 0;
+  padding-bottom: .3em;
+  text-decoration: none;
+}
+/*end of aboutBox --> footer*/
+
+footer {
+    padding: 30px 80px 20px 0;
+    display: block;
+    background:#151515;
+    color: white;
+    font-size: 85%;
+    text-align: end;
+}
+
+/*end of footer*/
